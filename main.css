@@ -1,0 +1,102 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E3F2FD;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.pumpkin {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.pumpkin div {
+    position: absolute;
+}
+
+.pumpkin-base {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(-90deg, #ee6f29, #e88a2d);
+    border-radius: 88px;
+    top: 0;
+    z-index: -5;
+}
+
+.pumpkin-eye {
+    height: 48px;
+    width: 48px;
+    background: radial-gradient(#623222, #864b35);
+    border-radius: 100px;
+    top: 40px;
+}
+
+.pumpkin-eye.left {
+    left: 40px;
+    box-shadow: -6px 3px #dd5b28;
+    transform: skew(4deg, 2deg);
+}
+
+.pumpkin-eye.right {
+    right: 40px;
+    box-shadow: 6px 3px #dd5b28;
+    transform: skew(-2deg, -8deg);
+}
+
+.pumpkin-mouth {
+    border-bottom-left-radius: 95px;
+    border-bottom-right-radius: 95px;
+    background: radial-gradient(#603120, #864b35);
+    height: 45px;
+    width: 100px;
+    bottom: 30px;
+    left: 25%;
+    box-shadow: -6px 0px #dd5b28, 6px 0px #dd5b28;
+    transform: skew(4deg, 2deg);
+}
+
+.pumpkin-tooth {
+    height: 20px;
+    width: 24px;
+    background-color: #e87f37;
+    top: 121px;
+    left: 72px;
+    z-index: 5;
+    transform: rotate(4deg);
+    box-shadow: 4px 3px #dd5b28, 1px 2px #dd5b28;
+}
+
+.pumpkin-tooth::after {
+    content: "";
+    display: block;
+    background-color: #ea7a37;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 32px;
+    left: 40px;
+    transform: rotate(-16deg);
+    box-shadow: -4px -2px #dd5b28, 1px -2px #dd5b28;
+}
+
+.pumpkin-stem {
+    height: 50px;
+    width: 22px;
+    background-color: #558B2F;
+    top: -32px;
+    right: 100px;
+    z-index: -10;
+    transform: rotate(-12deg);
+}
